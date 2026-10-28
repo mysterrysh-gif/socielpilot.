@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101522">
+<title>SocialPilot</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#101522;color:#f5f7ff;font-family:Arial,sans-serif}
+header{padding:24px 18px;background:#171f31;border-bottom:1px solid #30394c}
+header h1{margin:0;font-size:27px;color:#91aaff}
+header p{color:#aab4c8;margin:8px 0 0}
+main{padding:18px;max-width:800px;margin:auto}
+.notice{padding:13px;background:#332a16;border:1px solid #76602c;border-radius:12px;color:#ffe4a0;font-size:13px;line-height:1.5}
+h2{font-size:19px;margin:25px 0 13px}
+.platforms{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.platform{background:#1a2436;border:1px solid #34415a;border-radius:12px;padding:15px 5px;text-align:center;color:white}
+.platform b{display:block;font-size:15px;margin-bottom:7px}
+.platform span{font-size:12px;color:#aab8d3}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.card{background:#1a2436;border:1px solid #303d55;border-radius:14px;padding:16px}
+.card p{color:#aab4c8;margin:0 0 12px;font-size:13px}
+.value{font-size:27px;font-weight:bold}
+.small{font-size:12px;color:#aab4c8;margin-top:9px}
+button{background:#7895ff;color:#101522;border:0;border-radius:9px;padding:13px;font-weight:bold;font-size:14px}
+.full{width:100%;margin-top:13px}
+input,select{width:100%;padding:12px;border-radius:9px;background:#111a2a;color:white;border:1px solid #3b4860;margin:7px 0 13px}
+label{font-size:13px;color:#cbd4e7}
+footer{text-align:center;color:#8995ab;padding:30px;font-size:12px}
+</style>
+</head>
+<body>
+<header>
+<h1>SocialPilot</h1>
+<p>Ton centre de pilotage des réseaux sociaux</p>
+</header>
+<main>
+<div class="notice"><b>Mode prototype</b><br>Les chiffres ci-dessous sont des exemples, pas tes statistiques réelles. Aucune connexion à TikTok, Facebook ou YouTube n'est active.</div>
+
+<h2>Mes plateformes</h2>
+<div class="platforms">
+<div class="platform"><b>♪ TikTok</b><span>Non connecté</span></div>
+<div class="platform"><b>f Facebook</b><span>Non connecté</span></div>
+<div class="platform"><b>▶ YouTube</b><span>Non connecté</span></div>
+</div>
+
+<h2>Vue d'ensemble</h2>
+<div class="cards">
+<div class="card"><p>Vues</p><div class="value">—</div><div class="small">En attente de connexion</div></div>
+<div class="card"><p>J'aime</p><div class="value">—</div><div class="small">En attente de connexion</div></div>
+<div class="card"><p>Commentaires</p><div class="value">—</div><div class="small">En attente de connexion</div></div>
+<div class="card"><p>Abonnés</p><div class="value">—</div><div class="small">En attente de connexion</div></div>
+</div>
+
+<h2>Historique</h2>
+<div class="card">
+<p>Suivi des statistiques</p>
+<div class="small">L'historique commencera lorsque la collecte réelle des données sera configurée.</div>
+</div>
+
+<h2>Préparer une connexion</h2>
+<p class="small">Choisis la plateforme que tu souhaites connecter en premier. Ce choix ne connecte pas encore ton compte.</p>
+<label for="platform">Plateforme</label>
+<select id="platform">
+<option>TikTok</option>
+<option>Facebook</option>
+<option>YouTube</option>
+</select>
+<label for="account">Nom du compte ou de la page (facultatif)</label>
+<input id="account" placeholder="Ex. nom de ma page">
+<button class="full" onclick="alert('Choix enregistré uniquement sur cet écran. La connexion officielle reste à configurer.')">Préparer ma connexion</button>
+</main>
+<footer>SocialPilot · Prototype personnel</footer>
+</body>
+</html>
